@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+.background{
+    background-image: url(img/listrao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    max-width: 100%;
+    height: 75vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 12%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+    background-image: url(img/listra2.png);
+    padding: 7px 5%;
+}
+
+.logo{
+    margin-top: 0;
+    text-align: left;
+}
+
+
+.cabeçalho-link{
+    display: inline-flex;
+    gap: 3rem;
+}
+
+.cabeçalho-link a{
+
+    color: #ffffff;
+    font-weight: 1000;
+    transition: 0.3s;
+    margin-right: 25px;
+    
+}
+
+.cabeçalho-link a:hover{
+    color: #ff0000;
+}
+
+
+/*Icone de Aviao*/
+.icon span{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 25px;
+    color: #09ff00;
+
+}
+
+.icon span:hover{
+    color: #fffb00;
+}
+
+@media screen and (max-width: 769px){
+
+
+    .background{
+        width: 100%;
+        height: 200%;
+    }
+
+    header, .cabeçalho-link{
+        width:100%;
+        align-items: center;
+    }
+
+    .logo, .icon span{
+
+
+        display: none;
+
+    }
+
+
+
+
+}
+
+/*texto inicial*/
+
+.Text-sobre{
+    width: 90%;
+    height: 10%;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 11%;
+    line-height: 4rem;
+  }
+
+.main-sobre{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   width: 90%;
+   margin: 0 auto;
+}
+
+.h41{
+    color: #fbfbfb;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 85%;
+}
+
+.h42{
+    color: #fbfbfb;
+    font-size: 75px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 46%;
+}
+
+
+.Text-sobre h5{
+
+    color: #b9b9b9;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.h52{
+    color: #b9b9b9;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+
+}
+
+@media screen and (max-width: 769px){
+
+.h41 {
+    padding-top: 6rem;
+    font-size: 35px;
+    text-align: center;
+    background-color: none;
+}    
+
+.h42{
+
+    text-align: center;
+    font-size: 25px
+    
+}
+
+.container-card-1{
+    width: 120%;
+}
+
+} 
+
+
+/*Cards*/
+
+section h1{
+    
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    background-image: url(img/listrao.png);
+    color: #fff;
+    text-shadow: 
+    -1px -1px 0px #272727, 
+    -1px 1px 0px #272727,                    
+     1px -1px 0px #272727,                  
+     1px 0px 0px #272727;
+
+
+}
+
+
+.bob img{
+
+    width: 450px;
+    height: 450px;
+    transition: 0.25s ease;
+    box-shadow: 3.5px 3.5px 10px rgba(255, 255, 255, 0.700), -3.5px -3.5px 10px rgba(255, 255, 255, 0.700)
+    
+}
+
+.bob img:hover{
+
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+      
+}
+
+
+.container-card-1{
+
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-image: url(img/listrao.png);
+    padding-bottom: 3rem;
+
+}
+
+.cards{
+
+    background-color: #cd05055c;
+    margin-top: 100px;
+    height: auto;
+
+}
+
+
+.cards img{
+
+
+    width: 450px;
+    height: auto;
+    transition: 0.35s ease;
+    
+}
+
+
+
+.cards img:hover{
+     transform: scale(0.9) translateY(-5px);
+     cursor: pointer;
+     transition: 0.3s;
+
+   
+}
+
+.text{
+
+    text-align: center;
+    color: #fbfbfb;
+    font-size: 1.5rem;
+    text-shadow: 
+    -1px -1px 0px #000000, 
+    -1px 1px 0px #000000,                    
+     1px -1px 0px #000000,                  
+     1px 0px 0px #000000;
+
+
+}
+
+.last-text{
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+}
+

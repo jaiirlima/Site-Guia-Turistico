@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+.background{
+    background-image: url(img/kingston.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 12%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+    background-color: rgba(95, 95, 95, 0.1);
+    padding: 7px 5%;
+}
+
+.logo{
+    margin-top: 0;
+    text-align: left;
+}
+
+
+.cabeçalho-link{
+    display: inline-flex;
+    gap: 3rem;
+}
+
+.cabeçalho-link a{
+
+    color: #111;
+    font-weight: 1000;
+    transition: 0.3s;
+    margin-right: 25px;
+    
+}
+
+.cabeçalho-link a:hover{
+    color: #ffffff;
+}
+
+
+/*Icone de Aviao*/
+.icon span{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 25px;
+    color: #f6ff00;
+
+}
+
+.icon span:hover{
+    color: #03ff1c;
+}
+
+@media screen and (max-width: 769px){
+
+
+    .background{
+        width: 100%;
+        height: 100%;
+    }
+
+    header, .cabeçalho-link{
+        width: 100%;
+        height: 5%;
+        align-items:center;
+        text-align: center;
+        padding-left: 14px;
+    }
+
+    .logo, .icon span{
+
+
+        display: none;
+
+    }
+
+
+
+
+}
+
+
+/*Texto Sobre*/
+
+.Text-sobre{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 11%;
+    line-height: 4rem;
+    align-items: flex-end;
+  }
+
+.main-sobre{
+   display: flex;
+   align-items: center;
+
+   width: 1130px;
+   margin: 0 auto;
+}
+
+.Text-sobre h4{
+    color: #fff;
+    font-size: 4rem;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+.Text-sobre h5{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.Text-sobre p{
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 28px;
+    font-size: 18.5px;
+    margin-bottom: 13px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+@media screen and (max-width:769px){
+
+.Text-sobre h4{
+
+    text-align: left;
+    font-size: 1.5rem;
+    justify-content: none;
+}
+
+.Text-sobre p{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    background-color: none;
+}
+
+.p2{
+
+    width: 100%
+}
+
+.main-sobre{
+
+    width: 100%;
+}
+}
+
+
+
+.p2{
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 40%;
+    text-align: center;
+}
+
+
+
+.last-text{
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+}
+
+.Cidades{
+    margin-top: 10rem;
+    color: #ffffff;
+    margin-bottom: 5rem;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+.Marcas img{
+
+    margin-top: 3rem;
+    width: 180px;
+    height: auto;
+    background-color: aliceblue;
+}

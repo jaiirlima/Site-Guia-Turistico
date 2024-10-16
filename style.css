@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+.background{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 12%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+    background-color: rgba(95, 95, 95, 0.1);
+    padding: 7px 5%;
+}
+
+.logo{
+    margin-top: 0;
+    text-align: left;
+}
+
+
+.cabeçalho-link{
+    display: inline-flex;
+    gap: 3rem;
+}
+
+.cabeçalho-link a{
+
+    color: #111;
+    font-weight: 1000;
+    transition: 0.3s;
+    margin-right: 25px;
+    
+}
+
+.cabeçalho-link a:hover{
+    color: #ffffff;
+}
+
+/*Icone de Aviao*/
+.icon span{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 25px;
+    color: #000000;
+
+}
+
+.icon span:hover{
+    color: #ff0000;
+}
+
+@media screen and (max-width: 769px){
+
+
+    .background{
+        width: 100%;
+        height: 200%;
+    }
+
+    header, .cabeçalho-link{
+        width:100%;
+        align-items: center;
+    }
+
+    .logo, .icon span{
+
+
+        display: none;
+
+    }
+
+
+
+
+}
+
+.Meio{
+    padding: 7rem 0 0 8.5rem;
+    line-height: 4rem;
+}
+
+.Meio h1{
+    font-size: 4rem;
+    color: #303030
+    
+    
+}
+
+.Meio h1{
+    color: #303030;
+      text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,                    
+                1px -1px 0px #FFF,                  
+                1px 0px 0px #FFF;
+}
+
+.Meio p{
+    font-size: 1.5rem;
+    color: #ffffff;
+      text-shadow: 
+               -1px -1px 0px #555555, 
+               -1px -1px 0px #555555,                    
+                -1px -1px 0px #555555,                  
+                -1px 0px 0px #555555;
+}
+
+.Meio button{
+    background-image: url(img/bandeira.jpg);
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 
+             -1px -1px 0px #454545, 
+             -1px 1px 0px #454545,                    
+              1px -1px 0px #454545,                  
+              1px 0px 0px #454545;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: 0.3s;
+
+}
+
+.Meio button:hover{
+      background-color: #111;
+      transform: scaleY(1.2);
+}
+
+@media screen and (max-width: 769px){
+
+    .meio{
+        margin-top: 10%;
+    }
+.Meio, .h1, .Meio button, .Meio p {
+
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    padding-left: 0rem;
+}
+
+.Meio h1{
+    text-align: left;
+    font-size: 3.5rem;
+}
+
+.Meio p{
+    font-size: 2.5rem;
+
+
+}
+
+.Meio button{
+
+    align-items: center;
+    width: 35%;
+    margin-bottom: 2.5rem;
+}
+
+
+}
+
+section{
+    padding-top: 7rem;
+
+}
+
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.container-card-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+   
+}
+
+.cards img{
+    width: 450px;
+    height: auto;
+    transition: 0.35s ease;
+    
+}
+
+.cards img:hover{
+     transform: scale(0.9) translateY(-5px);
+     cursor: pointer;
+   
+}
+
+.text{
+    text-align: center;
+
+}
+
+.cta{
+    height: 60vh;
+    width: 100%;
+    background: url(../img/ffffc.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+
+.text-cta{
+    padding-left: 5rem;
+
+}
+
+.text-cta h6{
+    font-size: 17px;
+	font-weight: 500;
+	letter-spacing: .6px;
+	margin-bottom: 14px;
+
+}
+
+.text-cta h4{
+    font-size: 3.3rem;
+	line-height: 1.2;
+	letter-spacing: .6rem;
+	margin-bottom: 30px;
+}
+
+.text-cta a{
+    background-color: #c8815f;
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.text-cta a:hover{
+    background-color: #111;
+      transform: scaleY(1.2);
+
+}
+
+.container-roupas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+
+.container-roupas img:hover{
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.roupa img{
+    width: 250px;
+    height: auto;
+}
+
+.roupa{
+    background-color: #c8815f;
+    color: #000;
+}
+
+.Marcas{
+    margin-top: 10rem;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+.Marcas img{
+    width: 180px;
+    height: auto;
+    background-color: aliceblue;
+}
+
+#Contato{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 8rem;
+    margin-top: 5rem;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+}
+
+.meio-contato li{
+    margin-bottom: 15px;
+}
+
+.meio-contato li a{
+    display: block;
+    color: #555;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.last-text{
+    text-align: center;
+    background-color: #555;
+    color: #fff;
+}
